@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>营销号生成器</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+<label for="box1">输入关键字: </label><input type="text" id="box1">
+<input type="button" value="生成营销号文章" onclick="calcParagraph()"><br>
+<p type="text" id="output"></p><br>
+
+
+<script>
+    function calcParagraph(){
+        let box1 = document.getElementById("box1").value;
+        let sum = "众所周知，一般来说，随着社会的不断发展，人们的生活水平在不断地提升。\n"
+            + "最近网络上出现的" + box1 +"这个概念，那么" + box1 + "是什么呢？\n"
+            + "就和小编一起来看看吧。 " + box1 + "究竟是什么呢？" + box1 + "就是" + box1 + "，\n"
+            + "由于最近网络上对" + box1 + "的讨论，" + box1 + "的热度地增加，" + box1 + "就火起来了。\n"
+            + "大家可能会感到十分惊讶，但事实就是这样。小编也感到很惊讶。"
+        ;
+        document.getElementById("output").innerHTML = sum;
+    }
+</script>
+</body>
+</html>
