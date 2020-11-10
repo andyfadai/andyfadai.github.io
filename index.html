@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>营销号生成器</title>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="CalcParagraph.js"></script>
 </head>
 <body>
-    <a href="index.html">营销号生成器</a>
-    <a href="write-poem.html">装鳖小诗</a><br>
-    <label for="box1">输入关键字: </label><input type="text" id="box1">
-    <input type="button" value="生成营销号文章" onclick="calcParagraph()"><br>
-    <p id="output1"></p><br>
+    <div id="header">
+        <div class="container">
+            <ul id="header-nav">
+                <li><a href="index.html">营销号生成器</a></li>
+                <li><a href="write-poem.html">装鳖小诗</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="content">
+        <div class="generate">
+            <label for="box1">输入关键字: </label><input type="text" id="box1">
+            <input type="button" value="生成营销号文章" onclick="calcParagraph()"><br>
+        </div>
+        <p id="output1"></p><br>
+    </div>
 </body>
 </html>

@@ -1,10 +1,21 @@
 function calcParagraph(){
     let box1 = document.getElementById("box1").value;
-    document.getElementById("output1").innerHTML = "众所周知，一般来说，随着社会的不断发展，人们的生活水平在不断地提升。<br>"
-        + "最近网络上出现的" + box1 + "这个概念，那么" + box1 + "是什么呢？<br>"
-        + "就和小编一起来看看吧。 " + box1 + "究竟是什么呢？" + box1 + "就是" + box1 + "，<br>"
-        + "由于最近网络上对" + box1 + "的讨论，" + box1 + "的热度地增加，" + box1 + "就火起来了。<br>"
-        + "大家可能会感到十分惊讶，但事实就是这样。小编也感到很惊讶。";
+    let i =  Math.round(Math.random());
+    switch (i) {
+        case 0:
+            document.getElementById("output1").innerHTML = "众所周知，一般来说，随着社会的不断发展，人们的生活水平在不断地提升。"
+                + "最近网络上出现的" + box1 + "这个概念，那么" + box1 + "是什么呢？"
+                + "就和小编一起来看看吧。 " + box1 + "究竟是什么呢？" + box1 + "就是" + box1 + "，"
+                + "由于最近网络上对" + box1 + "的讨论，" + box1 + "的热度地增加，" + box1 + "就火起来了。"
+                + "大家可能会感到十分惊讶，但事实就是这样。小编也感到很惊讶。"
+            break
+        case 1:
+            document.getElementById("output1").innerHTML = "最近" + box1 + "上了微博热搜，但" + box1 + "究竟是什么呢？"
+                + "通过小编的调查，原来" + box1 + "就是" + box1 + "。" + box1 + "经过多年的发展，已经更加的先进了。"
+                + "大家可能会感到十分惊讶，但事实就是这样。小编也感到很惊讶。"
+            break
+    }
+
 }
 
 function writePoem(){

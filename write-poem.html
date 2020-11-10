@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>装逼小诗</title>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="CalcParagraph.js"></script>
 </head>
 <body>
-    <a href="index.html">营销号生成器</a>
-    <a href="write-poem.html">装鳖小诗</a><br>
-    <input type="button" value="生成装鳖小诗" onclick="writePoem()"><br>
-    <p id="output2"></p><br>
+
+    <div id="header">
+        <div class="container">
+            <ul id="header-nav">
+                <li><a href="index.html">营销号生成器</a></li>
+                <li><a href="write-poem.html">装鳖小诗</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="content">
+        <div class="generate">
+            <input type="button" value="生成装鳖小诗" onclick="writePoem()"><br>
+        </div>
+        <p id="output2"></p><br>
+    </div>
+
 </body>
 </html>
