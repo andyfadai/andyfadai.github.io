@@ -2,49 +2,11 @@
 body {
     color: #555;
     margin: 0;
-
 }
 
 li {
     display: inline;
     line-height: 1.5;
-}
-
-#header {
-    background-color: #e39136;
-    height: 50px;
-    line-height: 50px;
-}
-
-#header a {
-    color: white;
-    text-decoration: none;
-
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-#header-title {
-    display: block;
-    float: left;
-
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#header a:hover {
-    color: #222;
-}
-
-#header-nav {
-    display: block;
-    float: right;
-    margin-top: 0;
-}
-
-#header-nav li {
-    display: inline;
-    padding-left: 20px;
 }
 
 .container {

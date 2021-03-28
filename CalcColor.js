@@ -1,4 +1,5 @@
 let btn = document.getElementById("change");
+let home = document.getElementById("home");
 let text = document.getElementById("colour");
 
 let generator = function() {
@@ -16,5 +17,6 @@ btn.addEventListener('click', function() {
 
     document.body.style.background = newColour;
     btn.style.color = newColour;
+    home.style.color = newColour;
     text.innerText = newColour;
 });
