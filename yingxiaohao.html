@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>营销号生成器</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="CalcParagraph.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/generator-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="jsFiles/CalcParagraph.js"></script>
 </head>
 <body>
-<br>
-<br>
-<div id="content">
-    <div class="generate">
-        <label for="box1">输入关键字: </label><input type="text" id="box1">
-        <input type="button" value="生成营销号文章" onclick="calcParagraph()">
-        <input type="button" onclick="location.href='index.html';" value="返回主页" /><br>
+    <div class="generator">
+        <h1>营销号段落生成器</h1>
+        <div class="form__group">
+            <div class="input">
+                <input type="text" class="form__input" id="box1" placeholder="输入关键字" required="" />
+                <label for="box1" class="form__label">输入关键字</label>
+            </div>
+            <div class="btn btn-three" onclick="calcParagraph()" >
+                <span>生成营销号文章</span>
+            </div>
+        </div>
+        <div id="output1"></div>
+        <div class="btn btn-three" onclick="location.href='index.html';">
+            <span>返回主页</span>
+        </div>
     </div>
-    <p id="output1"></p><br>
 
-</div>
+
 </body>
 </html>

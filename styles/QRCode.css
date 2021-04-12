@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #a4d8b7;
+    font-family:'ZCOOL KuaiLe', cursive;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+img {
+    height: 300px;
+    width: 300px;
+    padding: 1rem;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 0.5rem;
+    grid-column: 1 / -1;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+textarea {
+    outline: none;
+    height: 100px;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    grid-column: 1 / -1;
+    font-family:'ZCOOL KuaiLe', cursive;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+button {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: background-color 0.2s;
+    font-family:'ZCOOL KuaiLe', cursive;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #F4F4F4;
+}
+
+input[type=button] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+input[type=button]:hover {
+    background-color:#278ad6;
+}
+input[type=button]:active {
+    position:relative;
+    top:1px;
+}

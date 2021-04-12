@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>装逼小诗</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="CalcParagraph.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/generator-styles.css">
+    <script src="jsFiles/CalcParagraph.js"></script>
 </head>
 <body>
-    <br>
-    <br>
-    <div id="content">
-        <div class="generate">
-            <input type="button" value="生成装鳖小诗" onclick="writePoem()">
-            <input type="button" onclick="location.href='index.html';" value="返回主页" /><br>
+    <div class="generator">
+        <h1 id="poemhead">装鳖小诗生成器</h1><br>
+        <div class="btn btn-three" onclick="writePoem()" >
+            <span>生成装鳖小诗</span>
         </div>
-        <p id="output2"></p><br>
+        <br>
+        <div id="output2"></div>
+        <div class="btn btn-three" onclick="location.href='index.html';">
+            <span>返回主页</span>
+        </div>
     </div>
 
 </body>
